@@ -1,0 +1,43 @@
+Build Configuration:
+WRLINUX_VERSION      = "10.22.33.6"
+WRLINUX_BRANCH       = "Base"
+BB_VERSION           = "2.0.0"
+BUILD_SYS            = "x86_64-linux"
+DISTRO               = "wrlinux"
+DISTRO_VERSION       = "10.22.33.6"
+MACHINE              = "qemux86-64"
+DEFAULTTUNE          = "core2-64"
+TARGET_SYS           = "x86_64-wrs-linux"
+TUNE_FEATURES        = "m64 core2"
+TARGET_FPU           = ""
+lib32:  TARGET_SYS        = "x86_64-wrsmllib32-linux"
+lib32:  TUNE_FEATURES     = "m32 core2"
+wrlinux              
+wrlinux-distro       = "WRLINUX_10_22_BASE_UPDATE0006:33ede91ea0fd092085f0c693e03a32ed43bf95f7"
+meta                 = "vWRLINUX_10_22_BASE_UPDATE0006-1-g5a27b80:5a27b80b5cb42238cb5a62e00a10594e159f4da6"
+wr-template          = "WRLINUX_10_22_BASE_UPDATE0006:7f50701e6e4415916ebb2ba34e469c692dafd1e1"
+meta-filesystems     
+meta-gnome           
+meta-initramfs       
+meta-python          
+meta-multimedia      
+meta-networking      
+meta-oe              
+meta-perl            = "WRLINUX_10_22_BASE_UPDATE0006:754d0fa9b1ff6eca9f55612ea89209f1144764c8"
+meta-realtime        = "WRLINUX_10_22_BASE_UPDATE0006:51faa1155b58367233678ff6d513814d8bb5eeb7"
+meta-virtualization  = "WRLINUX_10_22_BASE_UPDATE0006:2715d925b31ce987b062dae8db20e2985513c864"
+meta-webserver       
+meta-xfce            = "WRLINUX_10_22_BASE_UPDATE0006:754d0fa9b1ff6eca9f55612ea89209f1144764c8"
+meta-clang           = "WRLINUX_10_22_BASE_UPDATE0006:3715089f0e91d47f0996e597b734241fb7fc873e"
+meta-dpdk            = "WRLINUX_10_22_BASE_UPDATE0006:c6b79c9baf1f9856bd22143d93446bc5b3b2ef0e"
+meta-anaconda        = "WRLINUX_10_22_BASE_UPDATE0006:d83c4387885c9de05f2b60f85e6c28e377527197"
+meta-efi-secure-boot 
+meta-encrypted-storage 
+meta-ids             
+meta-integrity       
+meta                 = "WRLINUX_10_22_BASE_UPDATE0006:f314777dcd0079205905ca97a3df6fbd930c3bf4"
+meta-security        = "WRLINUX_10_22_BASE_UPDATE0006:8f2fc0fec9be6a8115a7095ee1c3ef3463e805e7"
+meta-selinux         = "WRLINUX_10_22_BASE_UPDATE0006:9e48d1e07c3252415442fe8ba6a74d75eb32f2bd"
+meta-signing-key     
+meta-tpm2            = "WRLINUX_10_22_BASE_UPDATE0006:f314777dcd0079205905ca97a3df6fbd930c3bf4"
+local                = "master:98f4b02cb763b23a76b251367898cdaa3e47d46f"
